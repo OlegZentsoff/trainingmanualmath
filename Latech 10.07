@@ -1,0 +1,420 @@
+\documentclass[a4paper,12pt]{article} % тип документа
+\usepackage[left=25mm, top=20mm, right=10mm]{geometry}
+% report, book
+%  Русский язык
+
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst}
+\renewcommand{\baselinestretch}{1.5}
+
+
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+
+\begin{document} % начало документа
+\begin{center}
+\textbf{I. ПРЕДЕЛЫ}\\[3mm]
+\textbf{Теоретические вопросы}
+\end{center}
+\par 1. \hspace{2pt} Понятие числовой последовательности и ее предела. Теорема об ограниченности \\[0,5mm]сходящейся последовательности. 
+\par 2. \hspace{0,5pt} Понятие предела функции в точке. Понятие функции, ограниченной в окрестности точки. Теорема об ограниченности функции, имеющей предел.
+\par 3. \hspace{1pt} Теорема о переходе к пределу в неравенствах. 
+\par 4. \hspace{1pt} Теорема о пределе промежуточной функции. 
+\par 5. \hspace{1pt} Понятие непрерывности функции. Доказать непрерывность функции $cos{x}$
+\par 6. \hspace{1pt} Первый замечательный предел $\lim\limits_{x \hspace{2pt} \rightarrow\ 0}\frac{sin{x}}{x}=1$ 
+\par 7. \hspace{1pt} Понятие бесконечно малой функции. Теорема о связи между функцией, ее пределом \\ и бесконечно малой. 
+\par 8. \hspace{1pt} Теорема о сумме бесконечно малых функций.
+\par 9. \hspace{1pt} Теорема о произведении бесконечно малой функции на ограниченную функцию.
+\par 10. Теорема об отношении бесконечно малой функции к функции, имеющей предел, \\отличный от нуля.
+\par 11. Теорема о пределе суммы.
+\par 12. Теорема о пределе произведения.
+\par 13. Теорема о пределе частного.
+\par 14. Теорема о переходе к пределу под знаком непрерывной функции.
+\par 15. Непрерывность суммы, произведения и частного.
+\par 16. Непрерывность сложной функции.
+\par 17. Понятие бесконечно большой функции. Теоремы о связи бесконечно больших функций с бесконечно малыми.
+\par 18. Сравнение бесконечно малых функций.
+\par 19. Эквивалентные бесконечно малые функции. Теорема о замене бесконечно малых \\функций эквивалентными.
+\par 20. Условие эквивалентности бесконечно малых функций. 
+\newpage
+\begin{center}
+\textbf{Теоретические упражнения}
+\end{center}
+\par  1. Доказать, что если &\lim\limits_{n\to\infty}\ a_n=a, то $\lim\limits_{n\to\infty}\ | a_n | =|a|$. Вытекает ли из существования\\[0,5mm] $\lim\limits_{n\to\infty}\ |a_n |$ существование $\lim\limits_{n\to\infty}\ a_n $ ? 
+\vspace {2mm} \par \footnotesize У к а з а н и е. Доказать и использовать неравенство 
+\begin{center}
+$||b|-|a|| \leq |b-a|$.
+\end{center}
+\par \normalsize 2. Доказать, что последовательность \{$n^2$\} расходится.
+\par 3. Сформулировать на языке << $\varepsilon - \delta$ >> утверждение: << Число А не является пределом в точке $x_0$ функции $f(x)$, определенной в окрестности точки $x_0$ >>.
+\par 4. Доказать, что если $f(x)$ непрерывная функция, $F(x)=|f(x)|$ есть также непрерывная функция. Верно ли обратное утверждение ?
+\par 5. Сформулировать на языке << $\varepsilon - \delta$ >> утверждение: <<Функция $f(x)$, определенная в окрестности точки $x_0$, не является непрерывной в этой точке>>.
+\par 6. Пусть $\lim\limits_{x \hspace{2pt} \rightarrow\ x_0}\ f(x) \neq0$, а  $\lim\limits_{x \hspace{2pt} \rightarrow\ x_0} \varphi(x)$ не существует. Доказать, что $\lim\limits_{x \hspace{2pt} \rightarrow\ x_0} f(x) \varphi(x)$ не существует.
+\vspace {2mm} \par \footnotesize У к а з а н и е. Допустить противное и использовать теорему о пределе частного. \vspace{2mm}
+\normalsize \par 7. Пусть функция $f(x)$ имеет предел в точке $x_0$, а функция $\varphi(x)$ не имеет предела. \\
+Будут ли существовать пределы: 
+\par \hspace{8pt} 1) $\lim\limits_{x \hspace{2pt} \rightarrow\ x_0} [f(x)+\varphi(x)]$; \ \ \ 2)$\lim\limits_{x \hspace{2pt} \rightarrow\ x_0} f(x) \varphi(x)$ ? \\[2mm]
+Рассмотреть пример: $\lim\limits_{x \hspace{2pt} \rightarrow\ 0} x sin\frac{1}{x} $. \vspace {5pt}
+\par 8. Пусть $\lim\limits_{x \hspace{2pt} \rightarrow\ x_0}\ f(x) \neq0$, а функция $\varphi(x)$ бесконечно большая при $x \rightarrow x_0$. Доказать, что \\[1mm] произведение $f(x)\varphi(x)$ является бесконечно большой функцией при $x \rightarrow x_0$.
+\par 9. Является ли бесконечно большой при $x \rightarrow 0$ функция $\frac{1}{x}cos\frac{1}{x}$ ?
+\par 10. Пусть $\alpha'(x)\alpha(x)$ и $\beta'(x)\beta(x)$ при $x \rightarrow x_0$. Доказать, что если $\lim\limits_{x \hspace{2pt} \rightarrow\ x_0}\ \frac{\alpha'(x)}{\beta'(x)}$ не существует, то $\lim\limits_{x \hspace{2pt} \rightarrow\ x_0}\ \frac{\alpha(x)}{\beta(x)}$ тоже не существует.
+\newpage
+\begin{center}
+\textbf{Расчетные задания}
+\end{center}
+\\
+\par \textbf{Задача 1.} Доказать, что $\lim\limits_{n \to\infty}\ a_n = a$ (указать $N(\varepsilon)$)
+\\[5pt]
+\large
+1.1  $a_n=\frac{3n-2}{2n-1}$, $a=\frac{3}{2}$.\\[8pt]
+1.2. $a_n=\frac{4n-1}{2n+1}$, $a=2$.\\[8pt]
+1.3. $a_n=\frac{7n+4}{2n+1}$, $a=\frac{7}{2}$.\\[8pt]
+1.4. $a_n=\frac{2n-5}{3n+1}$, $a=\frac{2}{3}$.\\[8pt]
+1.5. $a_n=\frac{7n-1}{n+1}$, $a=7$. \\[8pt]
+1.6. $a_n=\frac{4n^2+1}{3n^2+2}$, $a=\frac{4}{3}$. \\[8pt]
+1.7. $a_n=\frac{9-n^3}{1+2n^3}$, $a=-\frac{1}{2}$. \\[8pt]
+1.8. $a_n=\frac{4n-3}{2n+1}$, $a=2$. \\[8pt]
+1.9. $a_n=\frac{1-n^2}{2+4n^2}$, $a=-\frac{1}{2}$. \\[8pt]
+1.10. $a_n=-\frac{5n}{n+1}$, $a=-5$. \\[8pt]
+1.11. $a_n=\frac{n+1}{1-2n}$, $a=-\frac{1}{2}$. \\[8pt]
+1.12. $a_n=\frac{2n+1}{3n-5}$, $a=\frac{2}{3}$. \\[8pt]
+1.13. $a_n=\frac{1-n^2}{2+4n^2}$, $a=-\frac{1}{2}$. \\[8pt]
+1.14. $a_n=\frac{3n^2}{2-n^2}$, $a=-3$. \\[8pt]
+1.15. $a_n=\frac{n}{3n-1}$, $a=\frac{1}{3}$. \\[8pt]
+1.16. $a_n=\frac{3n^3}{n^3-1}$, $a=-3$. \\[8pt]
+1.17. $a_n=\frac{4+2n}{1-3n}$, $a=-\frac{2}{3}.$ \\[8pt]
+1.18. $a_n=\frac{5n+15}{6-n}$, $a=-5$. \\[8pt]
+1.19. $a_n=\frac{3-n^2}{1+2n^2}$, $a=-\frac{1}{2}$. \\[8pt]
+1.20. $a_n=\frac{2n-1}{2-3n}$, $a=-\frac{2}{3}$. \\[8pt]
+1.21. $a_n=\frac{3n-1}{5n+1}$, $a=\frac{3}{5}$. \\[8pt]
+1.22. $a_n=\frac{4n-3}{2n+1}$, $a=2$. \\[8pt]
+1.23. $a_n=\frac{1-2n^2}{2+4n^2}$, $a=-\frac{1}{2}$. \\[8pt]
+1.24. $a_n=\frac{5n+1}{10n-3}$, $a=\frac{1}{2}$. \\[8pt]
+1.25. $a_n=\frac{2-2n}{3+4n}$, $a=-\frac{1}{2}$. \\[8pt]
+1.26. $a_n=\frac{23-4n}{2-n}$, $a=4$. \\[8pt]
+1.27. $a_n=\frac{1+3n}{6-n}$, $a=-3$. \\[8pt]
+1.28. $a_n=\frac{2n+3}{n+5}$, $a=2$. \\[8pt]
+1.29. $a_n=\frac{3n^2+2}{4n^2-1}$, $a=\frac{3}{4}$. \\[8pt]
+1.30. $a_n=\frac{2-3n^2}{4+5n^2}$, $a=-\frac{3}{5}$. \\[8pt]
+1.31. $a_n=\frac{2n^3}{n^3-2}$, $a=2$. \\[8pt]
+\normalsize
+\par \textbf{Задача 2.} Вычислить пределы числовых последовательностей. 
+\\[5pt]
+\large
+2.1. $\lim\limits_{n \to\infty} \frac{(3-n)^2+(3+n)^2}{(3-n)^2-(3+n)^2}$. \\[8pt]
+2.2. $\lim\limits_{n \to\infty} \frac{(3-n)^2-(2-n)^4}{(1-n)^4-(1+n)^4}$. \\[8pt]
+2.3. $\lim\limits_{n \to\infty} \frac{(3-n)^2-(2-n)^4}{(1-n)^3-(1+n)^3}$. \\[8pt]
+2.4. $\lim\limits_{n \to\infty} \frac{(1-n)^4-(1+n)^4}{(1+n)^3-(1-n)^3}$. \\[8pt]
+2.5. $\lim\limits_{n \to\infty} \frac{(6-n)^2-(6+n)^2}{(6+n)^2-(1-n)^2}$. \\[8pt]
+2.6. $\lim\limits_{n \to\infty} \frac{(n+1)^3-(n+1)^2}{(n-1)^3-(n+1)^3}$. \\[8pt]
+2.7. $\lim\limits_{n \to\infty} \frac{(1+2n)^3-8n^3}{(1+2n)^2+4n^2}$. \\[8pt]
+2.8. $\lim\limits_{n \to\infty} \frac{(3-4n)^2}{(n-3)^3-(n+3)^3}$. \\[8pt]
+2.9. $\lim\limits_{n \to\infty} \frac{(3-n)^3}{(n+1)^2-(n+1)^3}$. \\[8pt]
+2.10. $\lim\limits_{n \to\infty} \frac{(n+1)^2+(n-1)^2-(n+2)^3}{(4-n)^3}$. \\[8pt]
+2.11. $\lim\limits_{n \to\infty} \frac{2(n+1)^3-(n-2)^3}{n^2+2n-3}$. \\[8pt]
+2.12. $\lim\limits_{n \to\infty} \frac{(n+1)^3+(n+2)^3}{(n+4)^3+(n+5)^3}$. \\[8pt]
+2.13. $\lim\limits_{n \to\infty} \frac{(n+3)^3+(n+4)^3}{(n+3)^4-(n+4)^4}$. \\[8pt]
+2.14. $\lim\limits_{n \to\infty} \frac{(n+1)^4-(n-1)^4}{(n+1)^3+(n-1)^3}$. \\[8pt]
+2.15. $\lim\limits_{n \to\infty} \frac{8n^3-2n}{(n+1)^4-(n-1)^4}$. \\[8pt]
+2.16. $\lim\limits_{n \to\infty} \frac{(n+6)^3-(n+1)^3}{(2n+3)^2+(n+4)^2}$. \\[8pt]
+2.17. $\lim\limits_{n \to\infty} \frac{(2n-3)^3-(n+5)^3}{(3n-1)^3+(2n+3)^3}$. \\[8pt]
+2.18. $\lim\limits_{n \to\infty} \frac{(n+10)^2+(3n+1)^2}{(n+6)^3-(n+1)^3}$. \\[8pt]
+2.19. $\lim\limits_{n \to\infty} \frac{(2n+1)^3+(3n+2)^3}{(2n+3)^3-(n-7)^3}$. \\[8pt]
+2.20. $\lim\limits_{n \to\infty} \frac{(n+7)^3-(n+2)^3}{(3n+2)^2+(4n+1)^2}$. \\[8pt]
+2.21. $\lim\limits_{n \to\infty} \frac{(2n+1)^3-(2n+3)^3}{(2n+1)^2+(2n+3)^2}$. \\[8pt]
+2.22. $\lim\limits_{n \to\infty} \frac{n^3-(n-1)^3}{(n+1)^4+n^4}$. \\[8pt]
+2.23. $\lim\limits_{n \to\infty} \frac{(n+2)^4-(n-2)^4}{(n+5)^2+(n-5)^2}$. \\[8pt]
+2.24. $\lim\limits_{n \to\infty} \frac{(n+1)^4-(n-1)^4}{(n+1)^3+(n-1)^3}$. \\[8pt]
+2.25. $\lim\limits_{n \to\infty} \frac{(n+1)^3-(n-1)^3}{(n+1)^2-(n-1)^2}$. \\[8pt]
+2.26. $\lim\limits_{n \to\infty} \frac{(n+1)^3-(n-1)^3}{(n+1)^2+(n-1)^2}$. \\[8pt]
+2.27. $\lim\limits_{n \to\infty} \frac{(n+2)^3+(n-2)^3}{n^4+2n^2-1}$. \\[8pt]
+2.28. $\lim\limits_{n \to\infty} \frac{(n+1)^3+(n-1)^3}{n^3-3n}$. \\[8pt]
+2.29. $\lim\limits_{n \to\infty} \frac{(n+1)^3+(n-1)^3}{n^3+1}$. \\[8pt]
+2.30. $\lim\limits_{n \to\infty} \frac{(n+2)^2-(n-2)^2}{(n+3)^3}$. \\[8pt]
+2.31. $\lim\limits_{n \to\infty} \frac{(2n+1)^2-(n+1)^2}{n^2+n+1}$. \\[8pt]
+\normalsize
+\par \textbf{Задача 3.} Вычислить пределы числовых последовательностей. 
+\\[5pt]
+\large
+3.1. $\lim\limits_{n \to\infty}\frac{n\sqrt[3]{5n^2}+\sqrt[4]{9n^8+1}}{(n+\sqrt{n})\sqrt{7-n+n^2}}$ \\[8pt]
+3.2. $\lim\limits_{n \to\infty}\frac{\sqrt{n-1}-\sqrt{n^2+1}}{\sqrt[3]{3n^3+3}+\sqrt[4]{n^5+1}}$ \\[8pt]
+3.3. $\lim\limits_{n \to\infty}\frac{\sqrt{n^3+1}-\sqrt{n-1}}{\sqrt[3]{n^3+1}+\sqrt{n-1}}$ \\[8pt]
+3.4.  $\lim\limits_{n \to\infty}\frac{\sqrt[3]{n^2-1}+7n^3}{\sqrt[4]{n^6n^6+n+1}-n}$ \\[8pt]
+3.5. $\lim\limits_{n \to\infty}\frac{\sqrt{3n-1}-\sqrt[3]{125n^3+n}}{\sqrt[5]{n}-n}$ \\[8pt]
+3.6. $\lim\limits_{n \to\infty}\frac{n\sqrt[5]{n}-\sqrt[3]{27n^6+n^2}}{(n+\sqrt[4]{n})\sqrt{9+n^2}}$ \\[8pt]
+3.7. $\lim\limits_{n \to\infty}\frac{\sqrt{n+2}-\sqrt{n^2+2}}{\sqrt[4]{4n^4+1}-\sqrt[3]{n^4-1}}$ \\[8pt]
+3.8. $\lim\limits_{n \to\infty}\frac{\sqrt{n^4+2}+\sqrt{n-2}}{\sqrt[4]{n^2+2}+\sqrt{n-2}}$ \\[8pt]
+3.9. $\lim\limits_{n \to\infty}\frac{6n^3-\sqrt{n^5+1}}{\sqrt{4n^6+3}-n}$ \\[8pt]
+3.10. $\lim\limits_{n \to\infty}\frac{\sqrt{5n+2}-\sqrt[3]{8n^3+5}}{\sqrt[4]{n+7}-n}$ \\[8pt]
+3.11. $\lim\limits_{n \to\infty}\frac{n\sqrt[4]{3n+1}+\sqrt{81n^4-n^2+1}}{(n+\sqrt[3]{n})\sqrt{5-n+n^2}}$ \\[8pt]
+3.12. $\lim\limits_{n \to\infty}\frac{\sqrt{n+3-\sqrt{n^2-3}}}{\sqrt[3]{n^5-4}-\sqrt[4]{n^4+1}}$ \\[8pt]
+3.13. $\lim\limits_{n \to\infty}\frac{\sqrt{n^5+3}-\sqrt{n-3}}{\sqrt[5]{n^5+3}+\sqrt{n-3}}$ \\[8pt]
+3.14. $\lim\limits_{n \to\infty}\frac{\sqrt[3]{n}-9n^2}{3n-\sqrt[4]{9n^8+1}}$ \\[8pt]
+3.15. $\lim\limits_{n \to\infty}\frac{\sqrt{4n+1}-\sqrt[3]{27n^3+4}}{\sqrt[4]{n}-\sqrt[3]{n^5+n}}$ \\[8pt]
+3.16. $\lim\limits_{n \to\infty}\frac{n\sqrt[3]{7n}-\sqrt[4]{81n^8-1}}{(n+4\sqrt{n})\sqrt{n^2-5}}$ \\[8pt]
+3.17. $\lim\limits_{n \to\infty}\frac{\sqrt[3]{n^3-7}+\sqrt[3]{n^2+4}}{\sqrt[4]{n^5+5}+\sqrt{n}}$ \\[8pt]
+3.18. $\lim\limits_{n \to\infty}\frac{\sqrt{n^6+4}+\sqrt{n-4}}{\sqrt[5]{n^6+6-\sqrt{n-6}}}$ \\[8pt]
+3.19. $\lim\limits_{n \to\infty}\frac{4n^2-\sqrt[4]{n^3}}{\sqrt[3]{n^6+n^3+1}-5n}$ \\[8pt]
+3.20. $\lim\limits_{n \to\infty}\frac{\sqrt{n+3}-\sqrt[3]{8n^3+3}}{\sqrt[4]{n+4-\sqrt[5]{n^5+5}}}$ \\[8pt]
+3.21. $\lim\limits_{n \to\infty}\frac{n\sqrt[4]{11n}+\sqrt{25n^4-81}}{(n-7\sqrt{n}\sqrt{n^2-n+1}}$ \\[8pt]
+3.22. $\lim\limits_{n \to\infty}\frac{\sqrt[3]{n^2}-\sqrt{n^2+5}}{\sqrt[5]{n^7}-\sqrt{n+1}}$ \\[8pt]
+3.23. $\lim\limits_{n \to\infty}\frac{\sqrt{n^7+5}-\sqrt{n-5}}{\sqrt[7]{n^7+5}+\sqrt{n-5}}$ \\[8pt] 
+3.24.$\lim\limits_{n \to\infty}\frac{\sqrt[3]{n^2+2-5n^2}}{n-\sqrt{n^4-n+1}}$ \\[8pt] 
+3.25. $\lim\limits_{n \to\infty}\frac{\sqrt{n+2}-\sqrt[3]{n^3+2}}{\sqrt[7]{n+2}-\sqrt[5]{n^5+2}}$ \\[8pt] 
+3.26. $\lim\limits_{n \to\infty}\frac{n\sqrt{71n}-\sqrt[3]{64n^6+9}}{(n-\sqrt[3]{n})\sqrt{11+n^2}}$ \\[8pt] 
+3.27. $\lim\limits_{n \to\infty}\frac{\sqrt{n+6}-\sqrt{n^2-5}}{\sqrt[3]{n^3+3}+\sqrt[4]{n^3+1}}$ \\[8pt]
+3.28. $\lim\limits_{n \to\infty}\frac{\sqrt{n^8+6-\sqrt{n-6}}}{'\sqrt[8]{n^8+6}+\sqrt{n-6}}$ \\[8pt] 
+3.29. $\lim\limits_{n \to\infty}\frac{n^2-\sqrt{n^3+1}}{\sqrt[3]{n^6+2}-n}$ \\[8pt]
+3.30. $\lim\limits_{n \to\infty}\frac{\sqrt{n+1}-\sqrt[3]{n^3+1}}{\sqrt[4]{n+1}-\sqrt[5]{n^5+1}}$ \\[8pt] 
+3.31. $\lim\limits_{n \to\infty}\frac{n\sqrt[6]{n}+\sqrt[3]{n^10+1}}{(n+\sqrt[4]{n}\sqrt[3]{n^3-1}}$ \\[8pt] 
+\normalsize
+\par \textbf{Задача 4.} Вычислить пределы числовых последовательностей. 
+\\[5pt]
+\large
+4.1. $\lim\limits_{n \to\infty} n(\sqrt{n^2+1}-\sqrt{n^2-1})$ \\[8pt] 
+4.2. $\lim\limits_{n \to\infty}n(\sqrt{n(n-2)}-\sqrt{n^2-3})$ \\[8pt] 
+4.3. $\lim\limits_{n \to\infty}(n-\sqrt[3]{n^3-5})n\sqrt{n}$ \\[8pt] 
+4.4. $\lim\limits_{n \to\infty}[\sqrt{(n^2+1)(n^2-4)}-\sqrt{n^4-9}]$ \\[8pt] 
+4.5. $\lim\limits_{n \to\infty}\frac{\sqrt{n^5-8}-n\sqrt{n(n^2+5)}}{\sqrt{n}}$ \\[8pt] 
+4.6. $\lim\limits_{n \to\infty}(\sqrt{n^2-3n+2}-n)$ \\[8pt]  
+4.7. $\lim\limits_{n \to\infty}(n+\sqrt[3]{4-n^3}$ \\[8pt] 
+4.8. $\lim\limits_{n \to\infty}[\sqrt{n(n+2)}-\sqrt{n^2-2n+3}]$ \\[8pt] 
+4.9. $\lim\limits_{n \to\infty}[\sqrt{(n+2)(n+1)}-\sqrt{(n-1)(n+3)}]$ \\[8pt] 
+4.10. $\lim\limits_{n \to\infty}n^2(\sqrt{n(n^4-1}-\sqrt{n^5-8}$ \\[8pt]  
+4.11. $\lim\limits_{n \to\infty}n(\sqrt[3]{5+8n^3}-2n$ \\[8pt]  
+4.12. $\lim\limits_{n \to\infty}n^2(\sqrt[3]{5+n^3}-\sqrt[3]{3+n^3}$ \\[8pt] 
+4.13. $\lim\limits_{n \to\infty}[\sqrt[3]{(n+2)^2}-\sqrt[3]{(n-3)^2}]$ \\[8pt] 
+4.14. $\lim\limits_{n \to\infty}\frac{\sqrt{(n+1)^3}-\sqrt{n(n-1)(n-3)}}{\sqrt{n}}$ \\[8pt] 
+4.15. $\lim\limits_{n \to\infty}\sqrt{n^2+3n-2}-\sqrt{n^2-3}$ \\[8pt] 
+4.16. $\lim\limits_{n \to\infty}\sqrt{n}(\sqrt{n+2}-\sqrt{n-3}$ \\[8pt] 
+4.17. $\lim\limits_{n \to\infty}\frac{\sqrt{n(n^5+9)}-\sqrt{(n^4-1)(n^2+5)}}{n}$ \\[8pt]  
+4.18. $\lim\limits_{n \to\infty}(\sqrt{n(n+5)}-n)$ \\[8pt] 
+4.19. $\lim\limits_{n \to\infty}\sqrt{n^3+8}(\sqrt{n^3+2}-\sqrt{n^3-1})$ \\[8pt] 
+4.20. $\lim\limits_{n \to\infty}\frac{\sqrt{(n^3+1)(n^2+3)}-\sqrt{n(n^4+2)}}{2\sqrt{n}}$ \\[8pt]  
+4.21. $\lim\limits_{n \to\infty}[\sqrt{(n^2+1)(n^2+2}-\sqrt{(n^2+1)(n^2-2}]$ \\[8pt] 
+4.22. $\lim\limits_{n \to\infty}\frac{\sqrt{(n^5+1)(n^2-1)-n\sqrt{n(n^4+1)}}}{n}$ \\[8pt]  
+4.23. $\lim\limits_{n \to\infty}\frac{\sqrt{(n^4+1)(n^2-1)}-\sqrt{n^6-1}}{n}$ \\[8pt]  
+4.24. $\lim\limits_{n \to\infty}[n-\sqrt{n(n-1)}]$ \\[8pt] 
+4.25. $\lim\limits_{n \to\infty}n^3(\sqrt[3]{n^2(n^6+4)}-\sqrt[3]{(n^8-1)})$ \\[8pt]  
+4.26. $\lim\limits_{n \to\infty}[n\sqrt{n}-\sqrt{n(n+1)(n+2)}]$ \\[8pt]  
+4.27. $\lim\limits_{n \to\infty}\sqrt[3]{n}(\sqrt[3]{n^2}-\sqrt[3]{n(n-1)}$ \\[8pt]  
+4.28. $\lim\limits_{n \to\infty}\sqrt{n+2}(\sqrt{n+3}-\sqrt{n-4})$ \\[8pt]  
+4.29. $\lim\limits_{n \to\infty}n(\sqrt{n^4+3}-\sqrt{n^4-2}$ \\[8pt]  
+4.30. $\lim\limits_{n \to\infty}\sqrt{n(n+1)(n+2)(\sqrt{n^3-3}-\sqrt{n^3-2}}$ \\[8pt] 
+4.31. $\lim\limits_{n \to\infty}\frac{\sqrt{(n^2+5)(n^4+2)-\sqrt{n^6-3n^2+5}}}{n}$ \\[8pt]
+\normalsize
+\par \textbf{Задача 5.} Вычислить пределы числовых последовательностей. 
+\\[5pt]
+\large
+5.1. $\lim\limits_{n \to\infty}(\frac{1}{n^2}+\frac{2}{n^2}+\frac{3}{n^2}+...+\frac{n-1}{n^2})$ \\[8pt] 
+5.2.$\lim\limits_{n \to\infty}\frac{(2n+1)!+(2n+2)!}{(2n+3)!}$ \\[8pt]
+5.3.$\lim\limits_{n \to\infty}[\frac{1+3+5+7+...+(2n-1)}{n+1}-\frac{2n+1}{2}]$ \\[8pt]
+5.4. $\lim\limits_{n \to\infty}\frac{2^n^+^1+3^n^+^1}{2^n+3^n}$ \\[8pt]
+5.5. $\lim\limits_{n \to\infty}\frac{1+2+3+...+n}{\sqrt{9n^4+1}}$ \\[8pt] 
+5.6. $\lim\limits_{n \to\infty}\frac{1+3+5+...+(2n-1)}{1+2+3+...+n}$ \\[8pt]
+5.7. $\lim\limits_{n \to\infty}[\frac{1+3+5+7+...+(2n-1}{n+3}-n]$ \\[8pt] 
+5.8. $\lim\limits_{n \to\infty}\frac{1+4+7+...+(3n-2)}{\sqrt{5n^4+n+1}}$ \\[8pt]
+5.9. $\lim\limits_{n \to\infty}\frac{(n+4)!-(n+2)!}{(n+3)!}$ \\[8pt]
+5.10. $\lim\limits_{n \to\infty} \frac{(3n-1)!+(3n+1)!}{(3n)!(n-1)}\\[8pt]$
+5.11. $\lim\limits_{n \to\infty}\frac{2^n-5^n}{2^n^+^1+5^n^+^1}$ \\[8pt]
+5.12. $\lim\limits_{n \to\infty}\frac{1+\frac{1}{3}+\frac{1}{3^2}+...+\frac{1}{3^n}}{1+\frac{1}{5}+\frac{1}{5^2}+...+\frac{1}{5^n}}$ \\[8pt]
+5.13. $\lim\limits_{n \to\infty}\frac{1-3+5-7+9-11+...+(4n-3)-(4n-1)}{\sqrt{n^2+1}+\sqrt{n^2+n+1}}$ \\[8pt]
+5.14. $\lim\limits_{n \to\infty}\frac{1-2+3-4+...+(2n-1)-2n}{\sqrt{9n^4+1}}$ \\[8pt]
+5.15. $\lim\limits_{n \to\infty}\frac{\sqrt[3]{n^3+5}-\sqrt{3n^4+2}}{1+3+5+...+(2n-1}$ \\[8pt]
+5.16. $\lim\limits_{n \to\infty}\frac{3^n-2^n}{3^n^-^1+2^n}$ \\[8pt]
+5.17. $\lim\limits_{n \to\infty}[\frac{n+2}{1+2+3+...+n}-\frac{2}{3}]$ \\[8pt]
+5.18. $\lim\limits_{n \to\infty}(\frac{5}{6}+\frac{13}{36}+...+\frac{3^n+2^n}{6^n})$ \\[8pt]
+5.19. $\lim\limits_{n \to\infty}\frac{2-5+4-7+...+2n-(2n+3)}{n+3}$ \\[8pt]
+5.20. $\lim\limits_{n \to\infty}\frac{(2n+1)!+(2n+2)!}{(2n+3)!-(2n+2)!}$ \\[8pt]
+5.21. $\lim\limits_{n \to\infty}\frac{1+2+...+n}{n-n^2+3}$ \\[8pt]
+5.22. $\lim\limits_{n \to\infty}\frac{n^2+\sqrt{n}-1}{5+7+12+...+(5n-3)}$ \\[8pt]
+5.23. $\lim\limits_{n \to\infty}(\frac{3}{4}+\frac{5}{16}+\frac{9}{64}+...+\frac{1+2^n}{4^n})$ \\[8pt]
+5.24. $\lim\limits_{n \to\infty}\frac{2+4+6+...+2n}{1+3+5+...+(2n-1)}$ \\[8pt]
+5.25. $\lim\limits_{n \to\infty}[\frac{1+5+9+13+...+(4n-3)}{n+1}-\frac{4n+1}{2}]$ \\[8pt]
+5.26. $\lim\limits_{n \to\infty}\frac{1-2+3-4+...+2n}{\sqrt[3]{n^3+2n+2}}$ \\[8pt] 
+5.27. $\lim\limits_{n \to\infty}\frac{2^n+7^n}{2^n-7^n^-^1}$ \\[8pt] 
+5.28. $\lim\limits_{n \to\infty}\frac{n!+(n+2)!}{(n-1)!+(n+2)!}$ \\[8pt]
+5.29. $\lim\limits_{n \to\infty}\frac{3+6+9+...+3n}{n^2+4}$ \\[8pt] 
+5.30. $\lim\limits_{n \to\infty}(\frac{7}{10}+\frac{29}{10}+...+\frac{2^n+5^n}{10^n})$ \\[8pt] 
+5.31. $\lim\limits_{n \to\infty}(\frac{2+4+...+2n}{n+3}-n)$ \\[8pt]
+\normalsize
+\par \textbf{Задача 6.} Вычислить пределы числовых последовательностей. 
+\\[5pt]
+\large
+6.1. $\lim\limits_{n \to\infty}(\frac{n+1}{n-1})^n$ \\[8pt] 
+6.2. $\lim\limits_{n \to\infty}(\frac{2n+3}{2n+1})^n^+^1$ \\[8pt] 
+6.3. $\lim\limits_{n \to\infty}(\frac{n^2-1}{n^2})^n^{^4}$ \\[8pt] 
+6.4. $\lim\limits_{n \to\infty}(\frac{n-1}{n+3})^n^+^2$ \\[8pt] 
+6.5. $\lim\limits_{n \to\infty}(\frac{2n^2+2}{2n^2+1})^n^{^2}$ \\[8pt] 
+6.6. $\lim\limits_{n \to\infty}(\frac{3n^2-6n+7}{3n^2+20n-1})^-^n^+^1$ \\[8pt]  
+6.7. $\lim\limits_{n \to\infty}(\frac{n^2-3n+6}{n^2+5n+1})^\frac{n}{2}$ \\[8pt] 
+6.8. $\lim\limits_{n \to\infty}(\frac{n-10}{n+1})^3^n^+^1$ \\[8pt] 
+6.9. $\lim\limits_{n \to\infty}(\frac{6n-7}{6n+4})^3^n^+^2$ \\[8pt] 
+6.10. $\lim\limits_{n \to\infty}(\frac{3n^2+4n-1}{3n^2+2n+7})^2^n^+^5$ \\[8pt]  
+6.11. $\lim\limits_{n \to\infty}(\frac{n^2+n+1}{n^2+n-1})^-^n^{^2}$ \\[8pt] 
+6.12. $\lim\limits_{n \to\infty}(\frac{2n^2+5n+7}{2n^2+5n+3})^n$ \\[8pt] 
+6.13. $\lim\limits_{n \to\infty}(\frac{n-1}{n+1})^n^{^2}$ \\[8pt] 
+6.14. $\lim\limits_{n \to\infty}(\frac{5n^2+3n-1}{5n^2+3n+3})^n^{^2}$ \\[8pt] 
+6.15. $\lim\limits_{n \to\infty}(\frac{3n+1}{3n-1})^2^n^+^3$ \\[8pt] 
+6.16. $\lim\limits_{n \to\infty}(\frac{2n^2+7n-1}{2n^2+3n-1})^-^n^{^2}$ \\[8pt] 
+6.17. $\lim\limits_{n \to\infty}(\frac{n+3}{n+5})^n^+^4$ \\[8pt] 
+6.18. $\lim\limits_{n \to\infty}(\frac{n^3+1}{n^3-1})^2^n^-^n^{^3}$ \\[8pt] 
+6.19. $\lim\limits_{n \to\infty}(\frac{2n^2+21n-7}{2n^2+18n+9})^2^n^+^1$ \\[8pt] 
+6.20. $\lim\limits_{n \to\infty}(\frac{10n-3}{10n-1})^5^n$ \\[8pt] 
+6.21. $\lim\limits_{n \to\infty}(\frac{3n^2-5n}{3n^2-2n+7})^n^+^1$ \\[8pt] 
+6.22. $\lim\limits_{n \to\infty}(\frac{n+3}{n+1})^-^n^{^2}$ \\[8pt] 
+6.23. $\lim\limits_{n \to\infty}(\frac{n^2-6n+5}{n^2-5n+5})^3^n^+^2$ \\[8pt] 
+6.24. $\lim\limits_{n \to\infty}(\frac{n+4}{n+2})^n$ \\[8pt] 
+6.25. $\lim\limits_{n \to\infty}(\frac{7n^2+18n-15}{7n^2+11n+15})^n^+^2$ \\[8pt] 
+6.26. $\lim\limits_{n \to\infty}(\frac{2n-1}{2n+1})^n^+^1$ \\[8pt] 
+6.27. $\lim\limits_{n \to\infty}(\frac{n^3+n+1}{n^3+2})^2^n^{^2}$ \\[8pt] 
+6.28. $\lim\limits_{n \to\infty}(\frac{13n+3}{13n-10})^n^-^3$ \\[8pt] 
+6.29. $\lim\limits_{n \to\infty}(\frac{2n^2+2n+3}{2n^2+2n+1})^3^n^{^2}^-^7$ \\[8pt] 
+6.30. $\lim\limits_{n \to\infty}(\frac{n+5}{n-7})^\frac{n}{6}^+^1$ \\[8pt] 
+6.31. $\lim\limits_{n \to\infty}(\frac{4n^2+4n-1}{4n^2+2n+3})^1^-^2^n$ \\[8pt] 
+\normalsize
+\par \textbf{Задача 7.} Доказать (найти $\delta(\varepsilon)$), что:
+\\[5pt]
+\large
+7.1. $\lim\limits_{x \to\ -3}\frac{2x^2+5x-3}{x+3}=-7$ \\[8pt] 
+7.2.  $\lim\limits_{x \to\ 1}\frac{5x^2-4x-1}{x-1}=6$ \\[8pt] 
+7.3. $\lim\limits_{x \to\ -2}\frac{3x^2+5x-2}{x+2}=-7$ \\[8pt] 
+7.4. $\lim\limits_{x \to\ 3}\frac{4x^2-14x+6}{x-3}=10$ \\[8pt] 
+7.5. $\lim\limits_{x \to\ -\frac{1}{2}}\frac{6x^2+x-1}{x+\frac{1}{2}}=-5$ \\[8pt] 
+7.6. $\lim\limits_{x \to\ \frac{1}{2}}\frac{6x^2-x-1}{x-\frac{1}{2}}=5$ \\[8pt] 
+7.7. $\lim\limits_{x \to\ -\frac{1}{3}}\frac{9x^2-1}{x+\frac{1}{3}}=-6$ \\[8pt] 
+7.8. $\lim\limits_{x \to\ 2}\frac{3x^2-5x-2}{x-2}=7$ \\[8pt] 
+7.9. $\lim\limits_{x \to\ -\frac{1}{3}}\frac{3x^2-2x-1}{x+\frac{1}{3}}=-4$ \\[8pt] 
+7.10. $\lim\limits_{x \to\ -1}\frac{7x^2+8x+1}{x+1}=-6$ \\[8pt] 
+7.11. $\lim\limits_{x \to\ 3}\frac{x^2-4x+3}{x-3}=2$ \\[8pt] 
+7.12. $\lim\limits_{x \to\ \frac{1}{2}}\frac{2x^2+3x-2}{x-\frac{1}{2}}=5$ \\[8pt] 
+7.13. $\lim\limits_{x \to\ \frac{1}{3}}\frac{6x^2-5x+1}{x-\frac{1}{3}}=-1$ \\[8pt] 
+7.14. $\lim\limits_{x \to\ -\frac{7}{5}}\frac{10x^2+9x-7}{x+\frac{7}{5}}=-19$ \\[8pt] 
+7.15. $\lim\limits_{x \to\ -\frac{7}{2}}\frac{2x^2+13x+21}{2x+7}=-\frac{1}{2}$ \\[8pt] 
+7.16. $\lim\limits_{x \to\ \frac{5}{2}}\frac{2x^2-9x+10}{2x-5}=\frac{1}{2}$ \\[8pt] 
+7.17. $\lim\limits_{x \to\ \frac{1}{3}}\frac{6x^2+x-1}{x-\frac{1}{3}}=5$ \\[8pt] 
+7.18. $\lim\limits_{x \to\ -\frac{1}{2}}\frac{6x^2-75x-39}{x+\frac{1}{2}}=-81$ \\[8pt] 
+7.19. $\lim\limits_{x \to\ 11}\frac{2x^2-21x-11}{x-11}=23$ \\[8pt] 
+7.20. $\lim\limits_{x \to\ 5}\frac{5x^2-24x-5}{x-5}=26$ \\[8pt] 
+7.21. $\lim\limits_{x \to\ -7}\frac{2x^2+15x+7}{x+7}=-13$ \\[8pt] 
+7.22. $\lim\limits_{x \to\ -4}\frac{2x^2+6x-8}{x+4}=-10$ \\[8pt] 
+7.23. $\lim\limits_{x \to\ -\frac{1}{3}}\frac{6x^2-x-1}{3x+1}=-\frac{5}{3}$ \\[8pt] 
+7.24. $\lim\limits_{x \to\ -5}\frac{x^2+2x-15}{x+5}=-8$ \\[8pt] 
+7.25. $\lim\limits_{x \to\ 8}\frac{3x^2-40x+128}{x-8}=8$ \\[8pt] 
+7.26. $\lim\limits_{x \to\ 10}\frac{5x^2-51x+10}{x-10}=49$ \\[8pt] 
+7.27. $\lim\limits_{x \to\ \frac{1}{2}}\frac{2x^2-5x+2}{x-\frac{1}{2}}=-3$ \\[8pt] 
+7.28. $\lim\limits_{x \to\ -6}\frac{3x^2+17x-6}{x+6}=-19$ \\[8pt] 
+7.29. $\lim\limits_{x \to\ \frac{1}{3}}\frac{3x^2+17x-6}{x-\frac{1}{3}}=19$ \\[8pt] 
+7.30. $\lim\limits_{x \to\ -\frac{1}{5}}\frac{15x^2-2x-1}{x+\frac{1}{5}}=-8$ \\[8pt] 
+7.31. $\lim\limits_{x \to\ \frac{1}{3}}\frac{15x^2-2x-1}{x-\frac{1}{3}}=8$ \\[8pt] 
+\normalsize
+\par \textbf{Задача 8.} Доказать, что функция $f(x)$ непрерывная в точке $x_0$ (найти $\delta(\varepsilon)$).
+\\[5pt]
+\large
+8.1. $f(x)= 5x^2-1$, $x_0=6$ \\[8pt] 
+8.2. $f(x)= 4x^2-2$, $x_0=5$ \\[8pt] 
+8.3. $f(x)= 3x^2-3$, $x_0=4$ \\[8pt] 
+8.4. $f(x)= 2x^2-4$, $x_0=3$ \\[8pt] 
+8.5. $f(x)= -2x^2-5$, $x_0=2$ \\[8pt] 
+8.6. $f(x)= -3x^2-6$, $x_0=1$ \\[8pt] 
+8.7. $f(x)= -4x^2-7$, $x_0=1$ \\[8pt] 
+8.8. $f(x)= -5x^2-8$, $x_0=2$ \\[8pt] 
+8.9. $f(x)= -5x^2-9$, $x_0=3$ \\[8pt] 
+8.10. $f(x)= -4x^2+9$, $x_0=4$ \\[8pt] 
+8.11. $f(x)= -3x^2+8$, $x_0=5$ \\[8pt] 
+8.12. $f(x)= -2x^2+7$, $x_0=6$ \\[8pt] 
+8.13. $f(x)= 2x^2+6$, $x_0=7$ \\[8pt] 
+8.14. $f(x)= 3x^2+5$, $x_0=8$ \\[8pt] 
+8.15. $f(x)= 4x^2+4$, $x_0=9$ \\[8pt] 
+8.16. $f(x)= 5x^2+3$, $x_0=8$ \\[8pt] 
+8.17. $f(x)= 5x^2+1$, $x_0=7$ \\[8pt] 
+8.18. $f(x)= 4x^2-1$, $x_0=6$ \\[8pt] 
+8.19. $f(x)= 3x^2-2$, $x_0=5$ \\[8pt] 
+8.20. $f(x)= 2x^2-3$, $x_0=4$ \\[8pt] 
+8.21. $f(x)= -2x^2-4$, $x_0=3$ \\[8pt] 
+8.22. $f(x)= -3x^2-5$, $x_0=2$ \\[8pt] 
+8.23. $f(x)= -4x^2-6$, $x_0=1$ \\[8pt] 
+8.24. $f(x)= -5x^2-7$, $x_0=1$ \\[8pt] 
+8.25. $f(x)= -4x^2-8$, $x_0=2$ \\[8pt] 
+8.26. $f(x)= -3x^2-9$, $x_0=3$ \\[8pt] 
+8.27. $f(x)= -2x^2+9$, $x_0=4$ \\[8pt] 
+8.28. $f(x)= 2x^2+8$, $x_0=5$ \\[8pt] 
+8.29. $f(x)= 3x^2+7$, $x_0=6$ \\[8pt] 
+8.30. $f(x)= 4x^2+6$, $x_0=7$ \\[8pt] 
+8.31. $f(x)= 5x^2+5$, $x_0=8$ \\[8pt] 
+\normalsize
+\par \textbf{Задача 9.} Вычислить пределы функций.
+\\[5pt]
+\large
+9.1. $\lim\limits_{x \to\ -1}\frac{(x^3-2x-1)(x+1)}{x^4+4x^2-5}$ \\[8pt] 
+9.2. $\lim\limits_{x \to\ -1}\frac{x^3-3x-2}{x+x^2}$ \\[8pt] 
+9.3. $\lim\limits_{x \to\ -1}\frac{(x^2+3x+2)^2}{x^3+2x^2-x-2}$ \\[8pt]
+9.4. $\lim\limits_{x \to\ 1}\frac{(2x^2-x-1)^2}{x^3+2x^2-x-2}$ \\[8pt]
+9.5. $\lim\limits_{x \to\ -3}\frac{(x^2+2x-3)^2}{x^3+4x^2+3x}$ \\[8pt]
+9.6. $\lim\limits_{x \to\ -1}\frac{(x^3-2x-1)^2}{x^4+2x+1}$ \\[8pt]
+9.7. $\lim\limits_{x \to\ 0}\frac{(1+x)^3-(1+3x)}{x+x^5}$ \\[8pt]
+9.8. $\lim\limits_{x \to\ -1}\frac{x^2-2x+1}{2x^2-x-1}$ \\[8pt]
+9.9. $\lim\limits_{x \to\ -1}\frac{x^3-3x-2}{x^2-x-2}$ \\[8pt]
+9.10. $\lim\limits_{x \to\ -1}\frac{x^3+5x^2+7x+3}{x^3+4x^2+5x+2}$ \\[8pt]
+9.11. $\lim\limits_{x \to\ 1}\frac{x^3-3x+2}{x^3-x^2-x+1}$ \\[8pt]
+9.12. $\lim\limits_{x \to\ 1}\frac{x^3+x^2-5x+3}{x^3-x^2-x+1}$ \\[8pt]
+9.13. $\lim\limits_{x \to\ 1}\frac{x^3+4x^2+5x+2}{x^3-3x-2}$ \\[8pt]
+9.14. $\lim\limits_{x \to\ 1}\frac{x^4-1}{2x^4-x^2-1}$ \\[8pt]
+9.15. $\lim\limits_{x \to\ -2}\frac{x^3+5x^2+8x+4}{x^3+3x^2-4}$ \\[8pt]
+9.16. $\lim\limits_{x \to\ 2}\frac{x^3-5x^2+8x-4}{x^3-3x^2+4}$ \\[8pt]
+9.17. $\lim\limits_{x \to\ 2}\frac{x^3-6x^2+12x-8}{x^3-3x^2+4}$ \\[8pt]
+9.18. $\lim\limits_{x \to\ -2}\frac{x^3+5x^2+8x+4}{x^3+7x^2+16x+12}$ \\[8pt]
+9.19. $\lim\limits_{x \to\ -1}\frac{x^3-3x-2}{(x^2-x-2)^2}$ \\[8pt]
+9.20. $\lim\limits_{x \to\ 2}\frac{x^3-3x-2}{x^3+7x^2+16x+12}$ \\[8pt]
+9.21. $\lim\limits_{x \to\ -1}\frac{x^3-3x-2}{x^2+2x+1}$ \\[8pt]
+9.22. $\lim\limits_{x \to\ 1}\frac{x^2-2x+1}{x^3-x^2-x+1}$ \\[8pt]
+9.23. $\lim\limits_{x \to\ 1}\frac{x^4-1}{2x^4-x^2-1}$ \\[8pt]
+9.24. $\lim\limits_{x \to\ -1}\frac{x^2+3x+2}{x^3+2x^2-x-2}$ \\[8pt]
+9.25. $\lim\limits_{x \to\ 1}\frac{2x^2-x-1}{x^3+2x^2-x-2}$ \\[8pt]
+9.26. $\lim\limits_{x \to\ -3}\frac{x^2+2x-3}{x^3+4x^2+3x}$ \\[8pt]
+9.27. $\lim\limits_{x \to\ -1}\frac{x^3-2x-1}{x^4+2x+1}$ \\[8pt]
+9.28. $\lim\limits_{x \to\ 0}\frac{(1+x)^3-(1+3x)}{x^2+x^5}$ \\[8pt]
+9.29. $\lim\limits_{x \to\ 1}\frac{x^2-1}{2x^2-x-1}$ \\[8pt]
+9.30. $\lim\limits_{x \to\ -3}\frac{x^3+7x^2+15x+9}{x^3+8x^2+21x+18}$ \\[8pt]
+9.31. $\lim\limits_{x \to\ 3}\frac{x^3-4x^2-3x+18}{x^3-5x^2+3x+9}$ \\[8pt]
+\normalsize
+\par \textbf{Задача 10.} Вычислить пределы функций.
+\\[5pt]
+\large
+10.1. $\lim\limits_{x \to\ 4} \frac{\sqrt{1+2x}-3}{\sqrt{x}-2}$ \\[8pt]
+10.2. $\lim\limits_{x \to\ -8} \frac{\sqrt{1-x}-3}{2+\sqrt[3]{x}}$ \\[8pt]
+10.3. $\lim\limits_{x \to\ 1} \frac{\sqrt{x-1}}{\sqrt[3]{x^2-1}}$ \\[8pt]
+10.4. $\lim\limits_{x \to\ 3} \frac{\sqrt{x+13}-2\sqrt{x+1}}{x^2-9}$ \\[8pt]
+10.5. $\lim\limits_{x \to\ -2} \frac{\sqrt[3]{x-6}+2}{x^3+8}$ \\[8pt]
+10.6. $\lim\limits_{x \to\ 16} \frac{\sqrt[4]{x}-2}{\sqrt{x}-4}$ \\[8pt]
+10.7 $\lim\limits_{x \to\ 8} \frac{\sqrt{9+2x}-5}{\sqrt[3]{x}-2}$ \\[8pt]
+10.8. $\lim\limits_{x \to\ 0} \frac{\sqrt{1-2x+x^2}-(1+x)}{x}$ \\[8pt]
+10.9. $\lim\limits_{x \to\ 0} \frac{\sqrt[3]{8+3x+x^2}-2}{x+x^2}$ \\[8pt]
+10.10. $\lim\limits_{x \to\ 0} \frac{\sqrt[3]{27+x}-\sqrt[3]{27-x}}{x+2\sqrt[3]{x^4}}$ \\[8pt]
+10.11. $\lim\limits_{x \to\ 1} \frac{\sqrt[3]{x}-1}{\sqrt{1+x}-\sqrt{2x}}$ \\[8pt]
+10.12. $\lim\limits_{x \to\ 0} \frac{\sqrt{1+x}-\sqrt{1-x}}{\sqrt[3]{1+x}-\sqrt[3]{1-x}}$ \\[8pt]
+10.13. $\lim\limits_{x \to\ 2} \frac{\sqrt[3]{4x}-2}{\sqrt{2+x}-\sqrt{2x}}$ \\[8pt]
+10.14. $\lim\limits_{x \to\ 1} \frac{\sqrt{x}-1}{x^2-1}$ \\[8pt]
+10.15 $\lim\limits_{x \to\ 3} \frac{\sqrt[3]{9x}-3}{\sqrt{3+x}-\sqrt{2x}}$ \\[8pt]
+10.16. $\lim\limits_{x \to\ -2} \frac{\sqrt[3]{x-6}+2}{x+2}$ \\[8pt]
+10.17. $\lim\limits_{x \to\ 4} \frac{\sqrt[3]{16x}-4}{\sqrt{4+x}-\sqrt{2x}}$ \\[8pt]
+10.18. $\lim\limits_{x \to\ 8} \frac{\sqrt{9+2x}-5}{\sqrt[3]{x^2}-4}$ \\[8pt]
+10.19. $\lim\limits_{x \to\ \frac{1}{2}} \frac{\sqrt[3]{\frac{x}{4}}-\frac{1}{2}}{\sqrt{\frac{1}{2}+x}-\sqrt{2x}}$ \\[8pt]
+10.20. $\lim\limits_{x \to\ \frac{1}{3}} \frac{\sqrt[3]{\frac{x}{9}}-\frac{1}{3}}{\sqrt{\frac{1}{3}+x}-\sqrt{2x}}$ \\[8pt]
+10.21. $\lim\limits_{x \to\ \frac{1}{4}} \frac{\sqrt[3]{\frac{x}{16}}-\frac{1}{4}}{\sqrt{\frac{1}{4}+x}-\sqrt{2x}}$ \\[8pt]
+10.22 $\lim\limits_{x \to\ 0} \frac{\sqrt[3]{1+x}-\sqrt{1-x}}{\sqrt[7]{x}}$ \\[8pt]
+10.23. $\lim\limits_{x \to\ 0} \frac{\sqrt[3]{27+x}-\sqrt[3]{27-x}}{\sqrt[3]{x^2+\sqrt[5]{x}}}$ \\[8pt]
+10.24. $\lim\limits_{x \to\ 0} \frac{\sqrt[3]{8+3x-x^2}-2}{\sqrt[3]{x^2+x^3}}$ \\[8pt]
+10.25. $\lim\limits_{x \to\ 0} \frac{\sqrt{1-2x+3x^2}-(1+x)}{\sqrt[3]{x}}$ \\[8pt]
+10.26. $\lim\limits_{x \to\ 8} \frac{\sqrt{9+2x}-5}{\sqrt[3]{x}-2}$ \\[8pt]
+10.27. $\lim\limits_{x \to\ 16} \frac{\sqrt[4]{x}-2}{\sqrt[3]{(\sqrt{x}-4)^2}}$ \\[8pt]
+10.28. $\lim\limits_{x \to\ -2} \frac{\sqrt[3]{x-6}+2}{\sqrt[3]{x^3+8}}$ \\[8pt]
+10.29. $\lim\limits_{x \to\ 4} \frac{\sqrt{x}-2}{\sqrt[3]{x^2-16}}$ \\[8pt]
+10.30. $\lim\limits_{x \to\ -8} \frac{10-x-6\sqrt{1-x}}{2+\sqrt[3]{x}}$ \\[8pt]
+10.31. $\lim\limits_{x \to\ 3} \frac{\sqrt{x+13}-2\sqrt{x+1}}{\sqrt[3]{x^2-9}}$ \\[8pt] 
+\normalsize
+\par \textbf{Задача 11.} Вычислить пределы функций.
+\\[5pt]
+\large
